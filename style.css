@@ -61,19 +61,23 @@ justify-content: space-between;
 
 
 .main-menu li{
-  margin: 0 3rem;
-  border: solid;
+  cursor: pointer;
+  margin: 0 2rem;
+  border: dashed;
   width: 120px;
   border-color: white;
-  padding: 3px 3px;
+  /* padding: 3px 3px; */
   font-size: 2rem;
   text-align: center;
 }
 
+
+
 .main-menu a{
   color: white;
-
+  font-family: var(--text-font);
 }
+
 
 .socials ul
 {
