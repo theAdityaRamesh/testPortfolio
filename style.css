@@ -27,41 +27,91 @@ a{
   background-color: black;
   width: 100vw;
   height: 100vh;
-  text-align: center;
-  padding-top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  padding: 0 2vw;
 }
 
+.one > div{
+  padding: 2vh 0;
+}
 
 .main-text{
   color: white;
+  font-family: var(--headline-font);
   font-size: 4rem;
 }
 
 .main-sub-text{
+  font-family: var(--text-font);
+  font-size: 1.5rem;
   color: white;
 }
 
+
+
+.main-menu ul
+{ 
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+
 .main-menu li{
-  display: inline-block;
-  padding-left: 10%;
+  margin: 0 3rem;
+  border: solid;
+  width: 120px;
+  border-color: white;
+  padding: 3px 3px;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .main-menu a{
   color: white;
+
+}
+
+.socials ul
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 }
 
 .socials li{
-  display: inline-block;
-  padding-left: 2%;
+  margin: 0 1rem;
 }
 
 
 .socials a{
+  font-size: 2rem;
   color: white;
 }
 
 
 @media only screen and (max-width: 756px) {
   
+
+  .main-text{
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .main-sub-text{
+    font-size: 1rem;
+  }
+
+  .main-menu ul
+  {
+  flex-direction: column;
+  }
+
+  .main-menu li{
+    margin: 0.7rem 0;
+  }
 
 }
