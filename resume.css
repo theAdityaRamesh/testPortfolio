@@ -64,7 +64,6 @@
   .intro-section{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
   }
 
 
@@ -104,14 +103,21 @@
     color: grey;
     font-family: var(--para);
     font-size: 1.5rem;  
-
+    text-align: justify;
 }
 
+.potrait{
+  padding-left: 10vw ;
+  padding-top: 10vh ;
+}
 
+.potrait img{
+  height: 40vh;
+  width: 40vw;
+}
 
   .intro{
     width: 40vw;
-
   }
 
 
@@ -147,6 +153,7 @@
 
 .skills li{
   margin: 2vh 0;
+  list-style-type: disc;
 }
 
 .skill-headline{
@@ -176,6 +183,21 @@
     .about-section{
       flex-direction: column;
     }
-  
+
+    .intro-section li{
+      margin-bottom: 2rem;
+    }
+    
+    .potrait{
+      padding-top: 0;
+      padding-left:0 ;
+      text-align: center;
+    }
+    
+    .potrait img{
+      height: 30vh;
+      width: 90vw;
+      
+    }
 
   }
